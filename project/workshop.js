@@ -26,3 +26,13 @@ formWorkshop.addEventListener("submit", function(event) {
     hasil.style.color = "green";
     formWorkshop.reset();
 });
+
+
+// Eksperimen: Event Change
+
+const pilihanWorkshop = document.getElementById("pilihanWorkshop");
+const infoSesi = document.getElementById("infoSesi");
+
+pilihanWorkshop.addEventListener("change", function() {
+    infoSesi.textContent = "Workshop dipilih: " + pilihanWorkshop.value;
+});
