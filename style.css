@@ -1,0 +1,35 @@
+
+/* Pengaturan dasar halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Judul halaman */
+h1 {
+    color: #333;
+}
+
+/* Paragraf pesan */
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Tombol */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efek ketika kursor diarahkan ke tombol */
+button:hover {
+    background-color: #0056b3;
+}
