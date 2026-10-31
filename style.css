@@ -63,3 +63,24 @@ textarea {
     font-weight: bold;
     color: #007bff;
 }
+
+
+/* LATIHAN 5: Tampilan Form Validasi */
+
+#formNama {
+    margin-top: 20px;
+}
+
+#nama {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#hasilValidasi {
+    font-weight: bold;
+    margin-top: 15px;
+}
+

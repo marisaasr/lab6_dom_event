@@ -34,3 +34,26 @@ const jumlahKarakter = document.getElementById("jumlahKarakter");
 inputPesan.addEventListener("input", function() {
     jumlahKarakter.textContent = inputPesan.value.length;
 });
+
+
+// LATIHAN 5: Validasi Form
+
+const formNama = document.getElementById("formNama");
+const inputNama = document.getElementById("nama");
+const hasilValidasi = document.getElementById("hasilValidasi");
+
+formNama.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const nama = inputNama.value.trim();
+
+    if (nama === "") {
+        hasilValidasi.textContent = "Nama tidak boleh kosong!";
+        hasilValidasi.style.color = "red";
+    } else {
+        hasilValidasi.textContent = "Halo, " + nama + "! Data berhasil divalidasi.";
+        hasilValidasi.style.color = "green";
+    }
+
+});
