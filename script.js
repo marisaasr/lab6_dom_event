@@ -48,13 +48,19 @@ formNama.addEventListener("submit", function(event) {
 
     const nama = inputNama.value.trim();
 
-    if (nama === "") {
-        hasilValidasi.textContent = "Nama tidak boleh kosong!";
-        hasilValidasi.style.color = "red";
-    } else {
-        hasilValidasi.textContent = "Halo, " + nama + "! Data berhasil divalidasi.";
-        hasilValidasi.style.color = "green";
-    }
+   
+if (nama === "") {
+    hasilValidasi.textContent = "Nama tidak boleh kosong!";
+    hasilValidasi.style.color = "red";
+
+} else if (nama.length < 3) {
+    hasilValidasi.textContent = "Nama minimal 3 karakter!";
+    hasilValidasi.style.color = "red";
+
+} else {
+    hasilValidasi.textContent = "Halo, " + nama + "! Data berhasil divalidasi.";
+    hasilValidasi.style.color = "green";
+}
 
 });
 
