@@ -15,3 +15,12 @@ const tombol = document.getElementById("tombolAksi");
 tombol.addEventListener("click", function() {
     pesan.textContent = "Tombol berhasil diklik!";
 });
+
+
+// LATIHAN 3: Mengubah Class dan Style CSS
+
+const tombolStyle = document.getElementById("tombolStyle");
+
+tombolStyle.addEventListener("click", function() {
+    document.body.classList.toggle("tampilanBaru");
+});
