@@ -57,3 +57,39 @@ formNama.addEventListener("submit", function(event) {
     }
 
 });
+
+
+// LATIHAN 6: To-do List
+
+const inputTugas = document.getElementById("inputTugas");
+const tombolTambah = document.getElementById("tombolTambah");
+const daftarTugas = document.getElementById("daftarTugas");
+
+tombolTambah.addEventListener("click", function() {
+
+    const tugas = inputTugas.value.trim();
+
+    if (tugas === "") {
+        alert("Tugas tidak boleh kosong!");
+        return;
+    }
+
+    const item = document.createElement("li");
+    const teks = document.createElement("span");
+    const tombolHapus = document.createElement("button");
+
+    teks.textContent = tugas;
+    tombolHapus.textContent = "Hapus";
+    tombolHapus.className = "hapusTugas";
+
+    tombolHapus.addEventListener("click", function() {
+        item.remove();
+    });
+
+    item.appendChild(teks);
+    item.appendChild(tombolHapus);
+
+    daftarTugas.appendChild(item);
+
+    inputTugas.value = "";
+});
