@@ -118,4 +118,6 @@ textarea {
     background: #dc3545;
     padding: 7px 12px;
 }
-
+.sembunyi {
+    display: none;
+}

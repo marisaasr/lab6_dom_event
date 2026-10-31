@@ -99,3 +99,12 @@ tombolTambah.addEventListener("click", function() {
 
     inputTugas.value = "";
 });
+
+// Eksperimen: Show Hide Paragraph
+
+const paragrafEksperimen = document.getElementById("paragrafEksperimen");
+const tombolHide = document.getElementById("tombolHide");
+
+tombolHide.addEventListener("click", function() {
+    paragrafEksperimen.classList.toggle("sembunyi");
+});
