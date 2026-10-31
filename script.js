@@ -6,3 +6,12 @@ const pesan = document.getElementById("pesan");
 
 judul.textContent = "Belajar JavaScript DOM";
 pesan.textContent = "Konten berhasil diubah oleh JavaScript.";
+
+
+// LATIHAN 2: Event Click
+
+const tombol = document.getElementById("tombolAksi");
+
+tombol.addEventListener("click", function() {
+    pesan.textContent = "Tombol berhasil diklik!";
+});
