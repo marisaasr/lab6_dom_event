@@ -24,3 +24,13 @@ const tombolStyle = document.getElementById("tombolStyle");
 tombolStyle.addEventListener("click", function() {
     document.body.classList.toggle("tampilanBaru");
 });
+
+
+// LATIHAN 4: Event Input dan Penghitung Karakter
+
+const inputPesan = document.getElementById("inputPesan");
+const jumlahKarakter = document.getElementById("jumlahKarakter");
+
+inputPesan.addEventListener("input", function() {
+    jumlahKarakter.textContent = inputPesan.value.length;
+});

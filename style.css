@@ -44,3 +44,22 @@ button:hover {
     border-radius: 10px;
     transition: 0.3s;
 }
+
+
+/* LATIHAN 4: Pengaturan textarea */
+
+textarea {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    resize: vertical;
+}
+
+#jumlahKarakter {
+    font-weight: bold;
+    color: #007bff;
+}
